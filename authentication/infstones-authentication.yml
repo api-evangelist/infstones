@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.infstones.com/reference
+docs: https://docs.infstones.com/reference/getting-started
+summary:
+  types: [apiKey]
+  api_key_in: [path]
+  note: >-
+    InfStones RPC access is authenticated by a per-project API key (project_id)
+    carried in the request path segment of the endpoint URL, e.g.
+    https://api.infstones.com/bsc/mainnet/{project_id}. The key is issued from the
+    InfStones developer console (https://app.infstones.com/api). The provider's
+    ReadMe-generated OpenAPI declares an empty security requirement, but the
+    project_id path parameter is the effective credential. No OAuth2 or OIDC flow
+    is exposed for RPC access.
+schemes:
+- name: projectIdPathKey
+  type: apiKey
+  in: path
+  parameter: project_id
+  description: >-
+    Per-project API key issued from the InfStones console, placed in the endpoint
+    path (/{project_id}). Scopes RPC requests to the owning project/plan.
+  sources:
+  - openapi/infstones-bnb-chain-openapi.json
