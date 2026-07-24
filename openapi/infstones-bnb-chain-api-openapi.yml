@@ -1,0 +1,61 @@
+openapi: 3.1.0
+info:
+  title: bnb-chain Bnb Chain API
+  version: '1.1'
+servers:
+- url: https://api.infstones.com/bsc/mainnet
+security:
+- {}
+tags:
+- name: Bnb Chain
+paths:
+  /{project_id}:
+    post:
+      summary: web3_sha3
+      description: Returns Keccak-256 (not the standardized SHA3-256) of the given data.
+      operationId: bnb-chain-web3-sha3
+      parameters:
+      - name: project_id
+        in: path
+        schema:
+          type: string
+          default: c94411509d724306b407dbfa6521dac2
+        required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                RAW_BODY:
+                  type: string
+                  default: '{"jsonrpc":"2.0","method":"web3_sha3","params":["0x67656c6c6f20776f726c64"],"id":1}'
+      responses:
+        '200':
+          description: '200'
+          content:
+            application/json:
+              examples:
+                Result:
+                  value: '{}'
+              schema:
+                type: object
+                properties: {}
+        '400':
+          description: '400'
+          content:
+            application/json:
+              examples:
+                Result:
+                  value: '{}'
+              schema:
+                type: object
+                properties: {}
+      deprecated: false
+      tags:
+      - Bnb Chain
+x-readme:
+  headers: []
+  explorer-enabled: true
+  proxy-enabled: true
+x-readme-fauxas: true
