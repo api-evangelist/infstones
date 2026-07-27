@@ -1,0 +1,51 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/infstones-bnb-chain-openapi.json
+docs: https://docs.infstones.com/reference
+summary: >-
+  Cross-cutting request/response semantics for the InfStones RPC API. The surface
+  is JSON-RPC 2.0 over HTTP POST (EVM chains) plus Tendermint RPC and Cosmos
+  gRPC-REST for Cosmos-SDK chains. Conventions below are derived from the published
+  OpenAPI/reference and the standard JSON-RPC 2.0 contract these endpoints implement.
+authentication:
+  style: api-key-in-path
+  detail: Per-project API key (project_id) in the URL path; see authentication/infstones-authentication.yml
+protocol:
+  primary: JSON-RPC 2.0
+  transport: HTTP POST (application/json)
+  also:
+  - Tendermint RPC (Cosmos-SDK chains)
+  - Cosmos gRPC-REST gateway
+  websocket_subscriptions:
+    supported: true
+    methods: [eth_subscribe, eth_unsubscribe]
+    note: Real-time event subscriptions (newHeads, logs, newPendingTransactions) over WebSocket.
+request_envelope:
+  fields: [jsonrpc, method, params, id]
+  example: '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":0}'
+  batch_supported: true
+response_envelope:
+  success_fields: [jsonrpc, id, result]
+  error_fields: [jsonrpc, id, error]
+  encoding: Quantities and hashes are 0x-prefixed hexadecimal strings (Ethereum JSON-RPC convention)
+error_envelope:
+  format: json-rpc-2.0
+  shape: '{"jsonrpc":"2.0","id":<id>,"error":{"code":<int>,"message":<string>,"data":<any>}}'
+  reference: errors/infstones-problem-types.yml
+idempotency:
+  header: null
+  supported: false
+  note: >-
+    No Idempotency-Key contract is documented. Read methods (eth_getBalance,
+    eth_blockNumber, ...) are naturally idempotent; state-changing broadcasts
+    (eth_sendRawTransaction) are deduplicated by the network via nonce/tx-hash,
+    not by an API idempotency key.
+pagination:
+  style: none
+  note: JSON-RPC method calls are single request/response; block/log range is bounded by method params (fromBlock/toBlock).
+versioning:
+  scheme: chain-network-path
+  detail: Chain and network are selected by URL path (/bsc/mainnet, /eth/mainnet); JSON-RPC methods are versioned by the underlying node client.
+rate_limits:
+  documented: false
+  note: Rate/throughput tiers are governed by plan; not published as a machine-readable limit.

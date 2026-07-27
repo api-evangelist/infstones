@@ -1,0 +1,47 @@
+generated: '2026-07-19'
+method: derived
+status: candidate
+source: openapi/infstones-bnb-chain-openapi.json
+note: >-
+  No official hosted/remote MCP server was found for InfStones. This is a candidate
+  tool surface derived from the published JSON-RPC method reference (EVM chains).
+  Each tool wraps one JSON-RPC method POSTed to the chain/network endpoint with the
+  project_id path key. Read-only methods are the safe default agent surface.
+server:
+  name: infstones
+  transport: http
+  url: null
+tools:
+- name: eth_blockNumber
+  description: Return the latest block number (hex).
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-blocknumber
+- name: eth_getBalance
+  description: Return the native balance of an address at a block.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-getbalance
+- name: eth_getBlockByNumber
+  description: Return block data by block number.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-getblockbynumber
+- name: eth_getTransactionByHash
+  description: Return transaction data for a hash.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-gettransactionbyhash
+- name: eth_getTransactionReceipt
+  description: Return the receipt (status, logs, gas used) for a transaction hash.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-gettransactionreceipt
+- name: eth_getTransactionCount
+  description: Return the nonce (transaction count) for an address.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-gettransactioncount
+- name: eth_call
+  description: Execute a read-only contract call.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-call
+- name: eth_getLogs
+  description: Return event logs matching a filter.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-getlogs
+- name: eth_gasPrice
+  description: Return the current gas price (hex Wei).
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-gasprice
+- name: eth_estimateGas
+  description: Estimate gas required for a transaction.
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-estimategas
+- name: eth_sendRawTransaction
+  description: Broadcast a signed raw transaction (state-changing).
+  source_operation: docs.infstones.com/reference/bnb-chain-eth-sendrawtransaction

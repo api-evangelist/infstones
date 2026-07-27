@@ -1,0 +1,43 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/infstones-bnb-chain-openapi.json
+format: json-rpc-2.0
+note: >-
+  The InfStones RPC API returns errors using the JSON-RPC 2.0 error object
+  (error.code / error.message / error.data), not RFC 9457 problem+json. The codes
+  below are the standard JSON-RPC 2.0 and Ethereum JSON-RPC (EIP-1474) error codes
+  these EVM endpoints implement; the published reference pages additionally document
+  HTTP 400 for malformed requests. Titles/remediation are derived from those specs.
+envelope:
+  location: error
+  fields: [code, message, data]
+problems:
+- code: -32700
+  title: Parse error
+  meaning: Invalid JSON was received by the server.
+  action: Send well-formed JSON in the request body.
+- code: -32600
+  title: Invalid Request
+  meaning: The JSON sent is not a valid JSON-RPC 2.0 Request object.
+  action: Include jsonrpc, method, params, and id fields correctly.
+- code: -32601
+  title: Method not found
+  meaning: The JSON-RPC method does not exist or is not supported on this chain/plan.
+  action: Check the method name against the chain's API reference.
+- code: -32602
+  title: Invalid params
+  meaning: Invalid method parameters.
+  action: Verify parameter count, order, and hex/0x encoding.
+- code: -32603
+  title: Internal error
+  meaning: Internal JSON-RPC error.
+  action: Retry; if persistent, contact support.
+- code: -32000
+  title: Server error / execution reverted
+  meaning: Generic server error, commonly transaction execution reverted or node processing error (EIP-1474 reserved range -32000..-32099).
+  action: Inspect error.data for the revert reason; adjust the transaction.
+http:
+- status: 400
+  title: Bad Request
+  meaning: Malformed request or invalid project_id path key.
+  source_operation: openapi/infstones-bnb-chain-openapi.json#bnb-chain-web3-sha3

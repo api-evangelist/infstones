@@ -1,0 +1,14 @@
+{
+  "provider": "infstones",
+  "sources": [
+    "infstones-bnb-chain-api-openapi.yml"
+  ],
+  "outputs": [
+    "infstones-bnb-chain-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

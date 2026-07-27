@@ -1,22 +1,64 @@
 aid: infstones
-name: infstones
-description: infstones is a company surfaced as a portfolio company of qiming, softbank-vision-fund and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: InfStones
+description: >-
+  InfStones is an enterprise-grade blockchain infrastructure platform providing
+  node deployment and management, non-custodial staking, and reliable RPC/JSON-RPC
+  API access across 50+ blockchains including Ethereum, BNB Chain, Cosmos, Solana,
+  Cardano, Tezos, TRON, and ZetaChain. Developers connect to hosted full and archive
+  nodes over standard EVM JSON-RPC, Tendermint, and Cosmos gRPC-REST endpoints
+  authenticated by a per-project API key, deploy dedicated validator and staking
+  nodes, and query on-chain data through a single unified developer console. The
+  platform holds SOC 2 Type I and Type II attestation and serves major exchanges,
+  protocols, and institutional clients globally. Backed by Qiming Venture Partners
+  and SoftBank Vision Fund.
 url: https://raw.githubusercontent.com/api-evangelist/infstones/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qiming
 - softbank-vision-fund
-x-tier: stub
+x-tier: profiled
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Blockchain
+- Node Infrastructure
+- Staking
+- Web3
+- JSON-RPC
+- RPC
+- Ethereum
+- BNB Chain
+- Cosmos
+- Cryptocurrency
+- API
+image: https://infstones.com/favicon.ico
+apis:
+- aid: infstones:infstones-bnb-chain-api
+  name: InfStones Bnb Chain API
+  description: The Bnb Chain API from InfStones — 1 operation(s) for bnb chain.
+  humanURL: https://docs.infstones.com/reference
+  baseURL: https://api.infstones.com/bsc/mainnet
+  tags:
+  - Bnb Chain
+  properties:
+  - type: OpenAPI
+    url: openapi/infstones-bnb-chain-api-openapi.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +67,50 @@ maintainers:
 common:
 - type: Website
   url: https://infstones.com
+- type: DeveloperPortal
+  url: https://app.infstones.com/api
+- type: Documentation
+  url: https://docs.infstones.com/docs
+- type: APIReference
+  url: https://docs.infstones.com/reference
+- type: GettingStarted
+  url: https://docs.infstones.com/reference/getting-started
+- type: SignUp
+  url: https://app.infstones.com
+- type: Support
+  url: https://infstones.com/contact-us
+- type: Blog
+  url: https://infstones.com/blog/all
+- type: TermsOfService
+  url: https://infstones.com/terms/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://infstones.com/terms/privacy-notice
+- type: LLMsTxt
+  url: llms/infstones-llms.txt
+- type: Authentication
+  url: authentication/infstones-authentication.yml
+- type: Conventions
+  url: conventions/infstones-conventions.yml
+- type: ErrorCatalog
+  url: errors/infstones-problem-types.yml
+- type: Sandbox
+  url: sandbox/infstones-sandbox.yml
+- type: MCPServer
+  url: mcp/infstones-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Conformance
+  url: conformance/infstones-conformance.yml
+- type: Compliance
+  url: https://infstones.com/security
+- type: VulnerabilityDisclosure
+  url: security/infstones-vulnerability-disclosure.yml
+- type: Security
+  url: https://infstones.com/bug-bounty-program
+- type: DomainSecurity
+  url: security/infstones-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

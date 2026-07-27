@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.infstones.com/reference
+docs: https://docs.infstones.com/reference/getting-started
+summary: >-
+  InfStones exposes an interactive API console via its ReadMe-hosted reference
+  ("Try It!" explorer), which lets developers execute live JSON-RPC calls against
+  each chain endpoint directly from the docs. A shared demo project_id is published
+  in the reference examples so calls can be run before provisioning a personal key.
+console:
+  type: interactive-api-explorer
+  url: https://docs.infstones.com/reference
+  proxy_enabled: true
+  note: ReadMe interactive explorer (x-readme.explorer-enabled / proxy-enabled true in the published OpenAPI).
+test_values:
+- kind: demo_project_id
+  value: c94411509d724306b407dbfa6521dac2
+  note: >-
+    Default/example project_id published verbatim in the provider's reference
+    OpenAPI examples for the "Try It!" console. Provider-published sample value;
+    provision a personal key at https://app.infstones.com/api for real usage.
+networks:
+  note: >-
+    Chains expose mainnet endpoints via path (e.g. /bsc/mainnet, /eth/mainnet).
+    No dedicated test/live key prefix separation is documented; testnets are
+    selected by chain/network path where offered.

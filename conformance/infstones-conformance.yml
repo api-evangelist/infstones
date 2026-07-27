@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: https://infstones.com/security
+docs: https://infstones.com/security
+compliance_program:
+  published: true
+  page: https://infstones.com/security
+  certifications:
+  - SOC 2 Type I
+  - SOC 2 Type II
+  practices:
+  - Annual third-party penetration testing
+  - AI-automated vulnerability scanning
+  - Encryption at rest and TLS/SSL in transit
+  - Frequent backups and disaster recovery
+  - Annual risk assessments
+  - Vendor risk-management due diligence
+standards:
+- id: json-rpc-2.0
+  conforms: true
+  evidence: EVM endpoints implement JSON-RPC 2.0 request/response and error objects
+- id: ethereum-json-rpc
+  conforms: true
+  evidence: eth_*, net_*, web3_* method surface per Ethereum JSON-RPC / EIP-1474
+- id: tendermint-rpc
+  conforms: true
+  evidence: Cosmos-SDK chains expose Tendermint RPC (status, block, commit, validators, ...)
+- id: cosmos-grpc-rest
+  conforms: true
+  evidence: Cosmos gRPC-REST gateway endpoints (cosmos/tx/v1beta1/txs, ...)
+- id: soc2
+  conforms: true
+  evidence: SOC 2 Type I and Type II attestation published on the security page
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors use the JSON-RPC 2.0 error object, not application/problem+json
+- id: oauth2
+  conforms: false
+  evidence: RPC access uses a project_id path key, no OAuth2 flow

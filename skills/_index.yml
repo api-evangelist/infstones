@@ -1,0 +1,8 @@
+generated: '2026-07-19'
+method: generated
+source: openapi/infstones-bnb-chain-openapi.json + https://docs.infstones.com/reference
+skills:
+- file: infstones-query-evm-chain.md
+  name: Query an EVM chain via InfStones RPC
+  api: openapi/infstones-bnb-chain-openapi.json
+  operations: [eth_blockNumber, eth_getBalance, eth_getTransactionReceipt, eth_getLogs, eth_sendRawTransaction]

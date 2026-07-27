@@ -1,0 +1,25 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for InfStones BNB Chain RPC
+  version: 1.0.0
+extends: openapi/infstones-bnb-chain-openapi.json
+actions:
+- target: $.info
+  update:
+    x-apievangelist-rating: 2
+    x-protocol: json-rpc-2.0
+    x-auth: api-key-in-path (project_id)
+    x-agent-ready: candidate-mcp
+    description: >-
+      InfStones BNB Chain JSON-RPC endpoint. POST JSON-RPC 2.0 method calls to
+      https://api.infstones.com/bsc/mainnet/{project_id}. Full Ethereum JSON-RPC
+      method surface (eth_*, net_*, web3_*) is documented at
+      https://docs.infstones.com/reference.
+- target: $.info
+  update:
+    x-apievangelist-artifacts:
+      authentication: authentication/infstones-authentication.yml
+      conventions: conventions/infstones-conventions.yml
+      errors: errors/infstones-problem-types.yml
+      mcp: mcp/infstones-mcp.yml
+      llms: llms/infstones-llms.txt
