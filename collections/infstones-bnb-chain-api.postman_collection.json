@@ -1,0 +1,193 @@
+{
+  "item": [
+    {
+      "id": "fa4e33a7-a5c4-4d00-b57e-c2489c7fc709",
+      "name": "Bnb Chain",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6b12b0db-78c2-4544-ab30-10077d7c687a",
+          "name": "web3_sha3",
+          "request": {
+            "name": "web3_sha3",
+            "description": {
+              "content": "Returns Keccak-256 (not the standardized SHA3-256) of the given data.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ":project_id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "c94411509d724306b407dbfa6521dac2",
+                  "key": "project_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"RAW_BODY\": \"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"web3_sha3\\\",\\\"params\\\":[\\\"0x67656c6c6f20776f726c64\\\"],\\\"id\\\":1}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "499fcfee-2446-4f67-a0e8-2743f23194bb",
+              "name": "200",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":project_id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "c94411509d724306b407dbfa6521dac2",
+                      "key": "project_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"RAW_BODY\": \"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"web3_sha3\\\",\\\"params\\\":[\\\"0x67656c6c6f20776f726c64\\\"],\\\"id\\\":1}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"{}\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "77bd321c-4a2c-465b-af0c-25c4b632ca51",
+              "name": "400",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":project_id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "c94411509d724306b407dbfa6521dac2",
+                      "key": "project_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"RAW_BODY\": \"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"web3_sha3\\\",\\\"params\\\":[\\\"0x67656c6c6f20776f726c64\\\"],\\\"id\\\":1}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"{}\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.infstones.com/bsc/mainnet",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "noauth"
+  },
+  "info": {
+    "_postman_id": "164b657a-f299-4989-855c-f440445f94d8",
+    "name": "bnb-chain Bnb Chain API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

@@ -2,11 +2,10 @@ generated: '2026-07-19'
 method: derived
 status: candidate
 source: openapi/infstones-bnb-chain-openapi.json
-note: >-
-  No official hosted/remote MCP server was found for InfStones. This is a candidate
-  tool surface derived from the published JSON-RPC method reference (EVM chains).
-  Each tool wraps one JSON-RPC method POSTed to the chain/network endpoint with the
-  project_id path key. Read-only methods are the safe default agent surface.
+note: No official hosted/remote MCP server was found for InfStones. This is a candidate tool surface derived
+  from the published JSON-RPC method reference (EVM chains). Each tool wraps one JSON-RPC method POSTed
+  to the chain/network endpoint with the project_id path key. Read-only methods are the safe default agent
+  surface.
 server:
   name: infstones
   transport: http
@@ -45,3 +44,9 @@ tools:
 - name: eth_sendRawTransaction
   description: Broadcast a signed raw transaction (state-changing).
   source_operation: docs.infstones.com/reference/bnb-chain-eth-sendrawtransaction
+deployment:
+  mode: none
+  verified: derived
+  tools: 11
+  checked: '2026-08-12'
+  source: catalog MCP census
