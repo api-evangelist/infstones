@@ -46,6 +46,18 @@ tags:
 - BNB Chain
 - Cosmos
 - Cryptocurrency
+tags_raw:
+- Company
+- Blockchain
+- Node Infrastructure
+- Staking
+- Web3
+- JSON-RPC
+- RPC
+- Ethereum
+- BNB Chain
+- Cosmos
+- Cryptocurrency
 - API
 image: https://infstones.com/favicon.ico
 apis:
@@ -55,6 +67,8 @@ apis:
   humanURL: https://docs.infstones.com/reference
   baseURL: https://api.infstones.com/bsc/mainnet
   tags:
+  - BNB Chain
+  tags_raw:
   - Bnb Chain
   properties:
   - type: OpenAPI
