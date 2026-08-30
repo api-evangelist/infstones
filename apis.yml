@@ -79,7 +79,7 @@ apis:
   humanURL: https://docs.infstones.com/reference
   baseURL: https://api.infstones.com/bsc/mainnet
   tags:
-  - BNB Chain
+  - Bnb Chain
   tags_raw:
   - Bnb Chain
   properties:
