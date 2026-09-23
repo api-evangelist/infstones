@@ -1,7 +1,7 @@
 {
   "provider": "infstones",
   "sources": [
-    "infstones-bnb-chain-api-openapi.yml"
+    "_original/infstones-bnb-chain-openapi.json"
   ],
   "outputs": [
     "infstones-bnb-chain-api-openapi.yml"
@@ -9,6 +9,14 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "infstones-bnb-chain-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "infstones-bnb-chain-openapi.json: tagged paths POST /{project_id} -> Bnb Chain",
+    "infstones-bnb-chain-openapi.json: declared missing tag: Bnb Chain",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "infstones-bnb-chain-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
