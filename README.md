@@ -1,4 +1,4 @@
-# infstones
+# InfStones
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,6 +64,115 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-infstones is a company surfaced as a portfolio company of qiming, softbank-vision-fund and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+InfStones is an enterprise-grade blockchain infrastructure platform providing node deployment and management, non-custodial staking, and reliable RPC/JSON-RPC API access across 50+ blockchains including Ethereum, BNB Chain, Cosmos, Solana, Cardano, Tezos, TRON, and ZetaChain. Developers connect to hosted full and archive nodes over standard EVM JSON-RPC, Tendermint, and Cosmos gRPC-REST endpoints authenticated by a per-project API key, deploy dedicated validator and staking nodes, and query on-chain data through a single unified developer console. The platform holds SOC 2 Type I and Type II attestation and serves major exchanges, protocols, and institutional clients globally. Backed by Qiming Venture Partners and SoftBank Vision Fund.
 
-Backed by: qiming, softbank-vision-fund — https://infstones.com
+**Areas:** Company · Blockchain · Node Infrastructure · Staking · Web3 · JSON-RPC · RPC · Ethereum · BNB Chain · Cosmos · Cryptocurrency
+
+## InfStones on APIs.io
+
+Everything profiled for InfStones is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/infstones/](https://apis.io/providers/infstones/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [InfStones Bnb Chain API](https://apis.io/apis/infstones/infstones-bnb-chain-api/) — The Bnb Chain API from InfStones — 1 operation(s) for bnb chain.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [infstones](https://apis.io/servers/infstones/infstones/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [bnb-chain Bnb Chain API](https://apis.io/collections/infstones/open-infstones-bnb-chain-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Infstones Bnb Chain Overlay](https://apis.io/overlays/infstones/infstones-bnb-chain-overlay/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Infstones Authentication](https://apis.io/security/infstones/infstones-authentication/)
+- [Infstones Domain Security](https://apis.io/security/infstones/infstones-domain-security/)
+- [Infstones Vulnerability Disclosure](https://apis.io/security/infstones/infstones-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://infstones.com)
+- [Documentation](https://docs.infstones.com/docs)
+- [Getting started](https://docs.infstones.com/reference/getting-started)
+- [API reference](https://docs.infstones.com/reference)
+- [Sign up](https://app.infstones.com)
+- [Support](https://infstones.com/contact-us)
+- [Blog](https://infstones.com/blog/all)
+- [Security](https://infstones.com/bug-bounty-program)
+- [Compliance](https://infstones.com/security)
+- [Terms of service](https://infstones.com/terms/terms-and-conditions)
+- [Privacy policy](https://infstones.com/terms/privacy-notice)
+
+## API Evangelist rating
+
+**Kin Score 39.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 49.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 42.3 |
+| Access clarity | 28.9 |
+
+**Agent readiness 22.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/infstones/](https://apis.io/providers/infstones/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for InfStones: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/infstones/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
